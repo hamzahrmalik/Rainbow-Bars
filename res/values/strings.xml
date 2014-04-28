@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rainbow Bars</string>
+    <string name="title_activity_main">Rainbow Bars</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string-array name="colours">
+        <item name="default">Default</item>
+        <item name="red">Red</item>
+        <item name="green">Green</item>
+        <item name="blue">Blue</item>
+        <item name="lblue">Light Blue</item>
+        <item name="orange">Orange</item>
+        <item name="yellow">Yellow</item>
+        <item name="purple">Purple</item>
+        <item name="white">White</item>
+        <item name="black">Black</item>
+        <item name="grey">Grey</item>
+    </string-array>
+        <string name="hexHint">Enter HEX code or choose from right</string>
+        <string name="HEXHint">HEX Code</string>
+
+</resources>

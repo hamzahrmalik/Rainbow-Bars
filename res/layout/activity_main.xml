@@ -1,0 +1,220 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="761dp"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:text="Statusbar colour"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="@string/hexHint"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/statusbarcolour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:hint="@string/HEXHint" >
+    </EditText>
+
+    <Spinner
+        android:id="@+id/statusbarspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/statusbarcolour"
+        android:layout_toRightOf="@+id/statusbarcolour"
+        android:entries="@array/colours" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/statusbarcolour"
+        android:layout_below="@+id/statusbarspinner"
+        android:layout_marginTop="34dp"
+        android:text="Navigation bar background"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="@string/hexHint"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/navbarcolour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_toLeftOf="@+id/statusbarspinner"
+        android:ems="10"
+        android:hint="@string/HEXHint" />
+
+    <Spinner
+        android:id="@+id/navbarspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/statusbarspinner"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/navbarcolour"
+        android:entries="@array/colours" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/navbarcolour"
+        android:layout_below="@+id/navbarspinner"
+        android:layout_marginTop="34dp"
+        android:text="Home Button Background Colour"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:text="@string/hexHint"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/homebuttoncolour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignRight="@+id/navbarcolour"
+        android:layout_below="@+id/textView5"
+        android:ems="10"
+        android:hint="@string/HEXHint" />
+
+    <Spinner
+        android:id="@+id/homebuttonspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/navbarspinner"
+        android:layout_alignTop="@+id/homebuttoncolour"
+        android:entries="@array/colours" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/homebuttoncolour"
+        android:layout_below="@+id/homebuttonspinner"
+        android:layout_marginTop="34dp"
+        android:text="Back Button Background Colour"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:text="@string/hexHint"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/backbuttoncolour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignRight="@+id/homebuttoncolour"
+        android:layout_below="@+id/textView7"
+        android:ems="10"
+        android:hint="@string/HEXHint" />
+
+    <Spinner
+        android:id="@+id/backbuttonspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/homebuttonspinner"
+        android:layout_alignTop="@+id/backbuttoncolour"
+        android:entries="@array/colours" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/backbuttoncolour"
+        android:layout_below="@+id/backbuttonspinner"
+        android:layout_marginTop="34dp"
+        android:text="Recents Button Background Colour"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:text="@string/hexHint"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/recentsbuttoncolour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignRight="@+id/backbuttoncolour"
+        android:layout_below="@+id/textView9"
+        android:ems="10"
+        android:hint="@string/HEXHint" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/recentsbuttonspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/backbuttonspinner"
+        android:layout_alignTop="@+id/recentsbuttoncolour"
+        android:entries="@array/colours" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/recentsbuttonspinner"
+        android:layout_marginTop="31dp"
+        android:text="Apply changes" 
+        android:onClick="apply"/>
+    
+    </RelativeLayout>
+
+</ScrollView>
