@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Barre arcobaleno</string>
+    <string name="title_activity_main">Barre arcobaleno</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="hello_world">Ciao mondo!</string>
+    
+    <string-array name="colori">
+        <item name="default">Predefinito</item>
+        <item name="red">Rosso</item>
+        <item name="green">Verde</item>
+        <item name="blue">Blu</item>
+        <item name="lblue">Blu luce</item>
+        <item name="orange">Arancione</item>
+        <item name="yellow">Giallo</item>
+        <item name="purple">Porpora</item>
+        <item name="white">Bianco</item>
+        <item name="black">Nero</item>
+        <item name="grey">Griggio</item>
+    </string-array>
+        <string name="hexHint">Inserisci il codice HEX o scegliere da destra</string>
+        <string name="HEXHint">Codice HEX</string>
+
+</resources>
